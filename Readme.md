@@ -2,7 +2,7 @@
 
 * Студент: [Алексей Поздеев](https://up.htmlacademy.ru/htmlcss-individual/2/user/1571355).
 * Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
-
+* Сайт: [Порект Седона](https://alexlmth.github.io/1571355-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
