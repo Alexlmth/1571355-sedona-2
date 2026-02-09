@@ -136,6 +136,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .section-description{
@@ -258,10 +259,36 @@ body {
   background-repeat: no-repeat;
 }
 
+.center-wrapper{
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.filters-form{
+  display: flex;
+  flex-grow: 1;
+}
+
+.filter-fields{
+  width: 150px;
+  margin-right: 70px;
+}
+
+.filter-fields:nth-child(3){
+  width: 288px;
+  margin-left: auto;
+}
+
+.filter-buttons{
+ display: flex;
+ flex-direction: column;
+}
+
 .main-inner-title{
 font-weight: 700;
 font-size: 60px;
 line-height: 78px;
+margin: 0;
 }
 
 .breadcrumbs-list{
@@ -292,12 +319,25 @@ line-height: 24px;
 
 .catalog-sort{
   display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
 
 .sort-select{
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  width: 292px;
+}
+
+.sort-title{
+  margin-right: 200px;
+}
+.sort-viewer-list{
+  display: flex;
+  width: 160px;
+  gap: 8px;
+  margin-left: auto;
 }
 
 .card-title{
