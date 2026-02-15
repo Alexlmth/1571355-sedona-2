@@ -233,6 +233,16 @@ body {
   text-align: center;
 }
 
+.services-titles-wrapper{
+  width: 1200px;
+  padding: 64px 347.5px;
+  box-sizing: border-box;
+}
+
+.services .section-title{
+  margin-bottom: 20px;
+}
+
 .services-list{
   display: flex;
   background-color: #83B3D31F;
@@ -456,3 +466,5 @@ text-transform: uppercase;
   align-items: center;
   justify-content: center;
 }
+
+
