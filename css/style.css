@@ -96,13 +96,10 @@ body {
   text-decoration: none;
 }
 
-.navigation-item .navigation-link{
-  padding: 20px 16px;
-}
-
-.user-navigation .navigation-link{
+.page-header-navigation .navigation-link{
   min-width: 20px;
-  min-height: 36px;
+  min-height: 20px;
+  padding: 20px 16px;
 }
 
 .user-navigation-link{
@@ -120,7 +117,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding: 0 34px;
+  border-radius: 4px;
+}
+
+.user-navigation .button{
+  padding: 8px 34px;
 }
 
 .big-button{
@@ -467,4 +468,52 @@ text-transform: uppercase;
   justify-content: center;
 }
 
+.catalog-card-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.card-item{
+  width: 340px;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  gap: 16px 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card-img {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.card-title {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.card-description {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.star-two{
+  margin: 0;
+  background-image: url(../images/background/TwoStars.svg);
+  background-repeat: no-repeat;
+}
+
+.star-three{
+  margin: 0;
+  background-image: url(../images/background/ThreeStars.svg);
+  background-repeat: no-repeat;
+}
+
+.star-four{
+  margin: 0;
+  background-image: url(../images/background/FourStars.svg);
+  background-repeat: no-repeat;
+}
