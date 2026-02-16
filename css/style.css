@@ -416,18 +416,28 @@ font-size: 24px;
 line-height: 28px;
 }
 
-.button-second{
-  background-color: #82B3D3;
+.button-fiast{
+  padding: 8px 26px;
 }
 
-.marked-button{
+.button-second{
+  background-color: #82B3D3;
+  padding: 8px 20px;
+}
+
+.button-second-active{
   background-color: #7DB54F;
+  padding: 8px 18px;
 }
 
 .card-rate{
 font-size: 16px;
 line-height: 20px;
 text-transform: uppercase;
+padding: 9px 22px 8px 23px;
+background-color: #F2F2F2;
+border-radius: 4px;
+margin: 0;
 }
 .pages-link{
 font-weight: 700;
@@ -472,12 +482,16 @@ text-transform: uppercase;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
 }
 
 .card-item{
   width: 340px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px min-content min-content auto auto;
   gap: 16px 20px;
   padding: 20px;
   box-sizing: border-box;
@@ -506,16 +520,19 @@ text-transform: uppercase;
   margin: 0;
   background-image: url(../images/background/TwoStars.svg);
   background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .star-three{
   margin: 0;
   background-image: url(../images/background/ThreeStars.svg);
   background-repeat: no-repeat;
+  background-position-y: center;
 }
 
 .star-four{
   margin: 0;
   background-image: url(../images/background/FourStars.svg);
   background-repeat: no-repeat;
+  background-position-y: center;
 }
