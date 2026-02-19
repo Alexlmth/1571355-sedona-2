@@ -39,7 +39,7 @@
       </header>
       <main class="main-inner">
         <div class="inner-wrapper">
-          <header class="main-inner-header center-wrapper">
+          <header class="main-inner-header">
             <h1 class="main-inner-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
@@ -54,7 +54,7 @@
               </li>
             </ul>
           </header>
-          <section class="filters-hotels center-wrapper">
+          <section class="filters-hotels">
             <h2 class="visually-hidden">Фильтры для выбора гостиниц</h2>
             <form class="filters-form" action=" https://echo.htmlacademy.ru/" method="get">
               <fieldset class="filter-fields">
@@ -131,7 +131,7 @@
             </form>
           </section>
         </div>
-        <section class="catalog center-wrapper">
+        <section class="catalog">
           <h2 class="visually-hidden">Результаты поиска</h2>
           <div class="catalog-sort">
             <h3 class="visually-hidden">Сортировка и отображение</h3>
@@ -259,9 +259,11 @@
           </ul>
         </section>
         <section class="subscribe">
-          <h2 class="subscribe-title section-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-text section-description">Только полезная информация и никакого спама, честное
-            бойскаутское!</p>
+          <div class="subscribe-wrapper">
+            <h2 class="subscribe-title section-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-text section-description">Только полезная информация и никакого спама, честное
+              бойскаутское!</p>
+          </div>
           <form class="subscribe-form" action=" https://echo.htmlacademy.ru/" method="get">
             <label class="subscribe-field">
               <span class="visually-hidden">Адрес вашей электронной почты</span>
@@ -274,24 +276,26 @@
       <footer class="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
+            <a class="footer-social-link footer-social-vk" href="#">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
+            <a class="footer-social-link footer-social-telegram" href="#">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-link" href="#">
+            <a class="footer-social-link footer-social-youtube" href="#">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
         </ul>
-        <a class="footer-phone navigation-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="footer-phone">
+          <a class="phones-number navigation-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <a class="footer-developer" href="#">
-          <img src="#" alt="Разработано HTML Academy">
+          <img src="./images/background/Academy.svg" width="115" height="33" alt="Разработано HTML Academy">
         </a>
       </footer>
     </div>
