@@ -147,7 +147,7 @@ body {
   background-color: #a1c0d5;
 }
 
-.section-title{
+.section-title,.search-title{
   color: #000000;
   font-size: 30px;
   font-weight: 700;
@@ -156,7 +156,7 @@ body {
   margin: 0;
 }
 
-.section-description{
+.section-description,.search-text{
   font-size: 22px;
   line-height: 26px;
   margin: 0;
@@ -173,6 +173,7 @@ body {
 
 .features{
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .features-titles-wrapper{
@@ -234,16 +235,6 @@ body {
   text-align: center;
 }
 
-.services-titles-wrapper{
-  width: 1200px;
-  padding: 64px 347.5px;
-  box-sizing: border-box;
-}
-
-.services .section-title{
-  margin-bottom: 20px;
-}
-
 .services-list{
   width: 1200px;
   display: flex;
@@ -252,7 +243,14 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
 
+.services-title{
+  margin-bottom: 20px;
+}
+
+.services-description{
+  margin-bottom: 64px;
 }
 
 .services-item:nth-child(2n){
@@ -263,6 +261,20 @@ body {
   box-sizing: border-box;
   width: 400px;
   padding: 183px 85px 81px;
+  background-repeat: no-repeat;
+  background-position: 162.5px 81px;
+}
+
+.services-item-dwelling{
+  background-image: url(../images/background/dwelling.svg);
+}
+
+.services-item-food{
+  background-image: url(../images/background/food.svg);
+}
+
+.services-item-gift{
+  background-image: url(../images/background/gift.svg);
 }
 
 .services-item-text{
@@ -285,8 +297,19 @@ body {
   box-sizing: border-box;
 }
 
+.search-title{
+  margin-bottom: 20px;
+}
+
+.search-text{
+  margin-bottom: 54px;
+}
+
 .search-button{
   text-decoration: none;
+  display: inline-block;
+  padding: 8px 50px;
+  min-width: 276px;
 }
 
 .subscribe{
