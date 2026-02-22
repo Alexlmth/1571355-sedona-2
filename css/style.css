@@ -145,6 +145,7 @@ body {
   background-position: left bottom,left top;
   background-repeat: no-repeat;
   background-color: #a1c0d5;
+  margin-bottom: 69px;
 }
 
 .section-title,.search-title{
@@ -176,12 +177,12 @@ body {
   margin-bottom: 64px;
 }
 
-.features-titles-wrapper{
-  padding: 69px 274px;
+.features-title{
+  margin-bottom: 25px;
 }
 
-.features .section-title{
-  margin-bottom: 25px;
+.features-description{
+  margin-bottom: 90px;
 }
 
 .features-list{
@@ -324,17 +325,16 @@ body {
   padding-bottom: 104px;
 }
 
-.subscribe-wrapper{
-  width: 1200px;
-  padding:0 362px;
-  padding-bottom: 54px;
-  box-sizing: border-box;
-}
+
 
 .subscribe-title{
   color: #ffffff;
   margin: 0;
   margin-bottom: 20px;
+}
+
+.subscribe-description{
+  margin-bottom: 54px;
 }
 
 .subscribe-form{
