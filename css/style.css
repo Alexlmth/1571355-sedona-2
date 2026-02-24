@@ -57,18 +57,25 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  align-items: flex-start;
 }
 
 .logo {
   display: flex;
   align-items: center;
   margin-right: 30px;
+  margin-bottom: -6px;
+  z-index: 100;
+}
+
+.logo img{
+  display: block;
 }
 
 .page-header-navigation {
   display: flex;
   flex-grow: 1;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .navigation-list {
@@ -79,6 +86,20 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation-link-currently{
+  position: relative;
+}
+
+.navigation-link-currently::after{
+  position: absolute;
+  content: "";
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
 }
 
 .user-navigation {
@@ -96,16 +117,44 @@ body {
   text-decoration: none;
 }
 
-.page-header-navigation .navigation-link{
+.navigation-link{
   min-width: 20px;
   min-height: 20px;
   padding: 20px 16px;
 }
 
-.user-navigation-link{
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+.user-navigation .navigation-link{
+  padding: 22px 12px;
+}
+
+.user-navigation .button{
+  margin-left: 20px;
+}
+
+.navigation-icon-search{
+  background-image: url(../images/background/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.navigation-icon-preferences{
+  background-image: url(../images/background/preferences.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative
+}
+
+.user-navigation-counter{
+    position: absolute;
+    background-color: #7DB54F;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    top: 11px;
+    left: 20px;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 400;
 }
 
 .button{
@@ -170,6 +219,22 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
+  position: relative;
+}
+
+.section-subtitle::after{
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #0000004D;
+  top: 86px;
+  left: 50%;
+  margin-left: -30px;
+  position: absolute;
+}
+
+.features-large .section-subtitle::after{
+  background-color: #FFFFFF4D;
 }
 
 .features{
