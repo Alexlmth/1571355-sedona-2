@@ -131,6 +131,7 @@ body {
 
 .user-navigation .button{
   margin-left: 20px;
+  padding: 8px 34px;
 }
 
 .navigation-icon-search{
@@ -168,11 +169,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  border: none;
   border-radius: 4px;
-}
-
-.user-navigation .button{
-  padding: 8px 34px;
 }
 
 .big-button{
@@ -512,11 +510,15 @@ flex-grow: 1;
 .filters-form{
   display: flex;
   flex-grow: 1;
+  align-items: flex-start;
 }
 
 .filter-fields{
   width: 150px;
+  padding: 0;
+  margin: 0;
   margin-right: 70px;
+  border: none;
 }
 
 .filter-fields:nth-child(3){
@@ -524,9 +526,146 @@ flex-grow: 1;
   margin-left: auto;
 }
 
+.filter-title{
+  margin-bottom: 32px;
+  padding: 0;
+}
+
+.filter-list{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.control{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 36px;
+  margin-bottom: 16px;
+}
+
+.control-mark{
+  position: absolute;
+  top: 1.5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark{
+  background-image: url(../images/background/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark{
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3f5e72;
+  content: "";
+}
+
+.range-wrapper-inputs{
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 44px;
+}
+
+.range-input-label{
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+}
+
+.range-input{
+  width: 143px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  background-color: #F2F2F2;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input-max{
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input-min{
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input-text{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.range-slider{
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.slider-bar{
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.slider-button{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+}
+
+.slider-button-min{
+  top: -8px;
+  left: 0;
+}
+
+.slider-button-max {
+  top: -8px;
+  right: 0;
+}
+
 .filter-buttons{
  display: flex;
  flex-direction: column;
+ width: 191px;
+ padding-top: 56px;
+ flex-wrap: wrap;
+ gap: 32px;
+
 }
 
 .main-inner-title{
@@ -534,10 +673,44 @@ font-weight: 700;
 font-size: 60px;
 line-height: 78px;
 margin: 0;
+margin-bottom: 8px;
 }
 
-.breadcrumbs-list{
-  font-size: 16px;
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  width: 8px;
+  height: 20px;
+  margin-left: 10px;
+  background-image: url(../images/background/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.breadcrumbs-main {
+  display: block;
+  width: 13px;
+  height: 20px;
+
+  background-image: url(../images/background/main-page.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .filter-title{
@@ -556,10 +729,12 @@ line-height: 24px;
 
 .filter-button-submit{
   background-color: #82B3D3;
+  padding: 8px 0;
 }
 
 .filter-button-reset{
   background-color: transparent;
+  padding: 8px 0;
 }
 
 .catalog{
