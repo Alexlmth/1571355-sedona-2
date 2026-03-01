@@ -116,11 +116,13 @@
                 <legend class="filter-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
                   <label class="range-input-label">
-                    <input class="range-input range-input-min" type="number" name="price-from" value="0" min="0" max="8990" step="10">
+                    <input class="range-input range-input-min" type="number" name="price-from" value="0" min="0"
+                      max="8990" step="10">
                     <span class="range-input-text">от</span>
                   </label>
                   <label class="range-input-label">
-                    <input class="range-input range-input-max" type="number" name="price-to" value="9000" min="10" max="9000" step="10">
+                    <input class="range-input range-input-max" type="number" name="price-to" value="9000" min="10"
+                      max="9000" step="10">
                     <span class="range-input-text">до</span>
                   </label>
                 </div>
@@ -150,7 +152,7 @@
             <h3 class="visually-hidden">Сортировка и отображение</h3>
             <p class="sort-title section-title">Найдено гостиниц: <span class="catalog-quantity">38</span></p>
             <select class="sort-select">
-              <option class="select-option">Сначала дешевые</option>
+              <option class="sort-select-option">Сначала дешевые</option>
             </select>
             <ul class="sort-viewer-list">
               <li class="viewer-item">
@@ -252,7 +254,7 @@
           <h3 class="visually-hidden">Список страниц</h3>
           <ul class="pages-list">
             <li class="pages-item">
-              <a class="pages-link" href="#">1</a>
+              <a class="pages-link pages-first-link" href="#">1</a>
             </li>
             <li class="pages-item">
               <a class="pages-link" href="#">2</a>
@@ -264,7 +266,7 @@
               <a class="pages-link" href="#">4</a>
             </li>
             <li class="pages-item">
-              <a class="pages-link" href="#">...</a>
+              <a class="pages-link pages-penultimate-link" href="#">...</a>
             </li>
             <li class="pages-item">
               <a class="pages-link" href="#">10</a>
@@ -272,11 +274,9 @@
           </ul>
         </section>
         <section class="subscribe">
-          <div class="subscribe-wrapper">
-            <h2 class="subscribe-title section-title">Подпишитесь на рассылку</h2>
-            <p class="subscribe-text section-description">Только полезная информация и никакого спама, честное
-              бойскаутское!</p>
-          </div>
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+          <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное
+            бойскаутское!</p>
           <form class="subscribe-form" action=" https://echo.htmlacademy.ru/" method="get">
             <label class="subscribe-field">
               <span class="visually-hidden">Адрес вашей электронной почты</span>
