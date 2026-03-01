@@ -107,7 +107,7 @@ body {
 .user-navigation {
   display: flex;
   width: 338px;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-left: auto;
   justify-content: flex-end;
@@ -130,8 +130,10 @@ body {
 }
 
 .user-navigation .button{
-  margin-left: 20px;
+  margin: 12px 0 12px 20px;
   padding: 8px 34px;
+  max-width: 160px;
+  box-sizing: border-box;
 }
 
 .navigation-icon-search{
