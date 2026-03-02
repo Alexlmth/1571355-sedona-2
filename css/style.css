@@ -90,9 +90,6 @@ body {
   list-style: none;
 }
 
-.navigation-link-currently{
-  position: relative;
-}
 
 .navigation-link-currently::after{
   position: absolute;
@@ -120,13 +117,28 @@ body {
 }
 
 .navigation-link{
+  position: relative;
   min-width: 20px;
   min-height: 20px;
   padding: 20px 16px;
 }
 
+.navigation-link-hover:hover::after{
+  position: absolute;
+  content: "";
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  height: 2px;
+  background-color: #756257;
+}
+
 .user-navigation .navigation-link{
   padding: 22px 12px;
+}
+
+.user-navigation .button:hover{
+  background-color: #615048;
 }
 
 .user-navigation .button{
@@ -387,7 +399,7 @@ body {
   background-color: #a1c0d5;
   color: #ffffff;
   background-image: url(../images/background/subscribe.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
   text-align: center;
