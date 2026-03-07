@@ -966,8 +966,21 @@ text-transform: uppercase;
   align-self: end;
 }
 .star{
-  min-width: 100px;
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 140px;
   min-height: 17px;
+  padding: 10px 0;
+  background-color: #ced6c6;
+}
+
+.star::before{
+  position: absolute;
+  background-image: url(../images/background/star.svg);
+  background-repeat: space no-repeat;
+  background-size: contain;
+
 }
 
 .star-two{
@@ -978,10 +991,7 @@ text-transform: uppercase;
 }
 
 .star-three{
-  margin: 0;
-  background-image: url(../images/background/ThreeStars.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
+
 }
 
 .star-four{
