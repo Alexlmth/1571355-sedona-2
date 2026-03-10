@@ -123,7 +123,7 @@ body {
   padding: 20px 16px;
 }
 
-.navigation-link:focus, .search-button,
+.navigation-link:focus, .search-button, .pages-link, .viewer-link, .card-link,
 .subscribe-button:focus, .footer-social-link, .footer-developer:focus{
   outline: none;
 }
@@ -866,8 +866,13 @@ line-height: 24px;
   border-radius: 4px;
 }
 
-.viewer-link-active{
+.viewer-link-active,.viewer-link:not(.viewer-link-active):hover,
+.viewer-link:not(.viewer-link-active):active{
   border-color: #000000;
+}
+
+.viewer-link:not(.viewer-link-active):focus-visible{
+  border-color: #68a2ca;;
 }
 
 .viewer-icon{
@@ -889,12 +894,22 @@ line-height: 24px;
 }
 
 .card-title{
-font-size: 24px;
-line-height: 28px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .button-fiarst{
   padding: 8px 26px;
+}
+
+.button-fiarst:hover,
+.button-fiarst:focus-visible{
+  background-color: #615048;
+}
+
+.button-fiarst:active{
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-second{
@@ -902,9 +917,35 @@ line-height: 28px;
   padding: 8px 20px;
 }
 
+.button-second:not(.button-second-active):hover,
+.button-second:not(.button-second-active):focus-visible{
+  background-color: #68A2CA;
+}
+
+.button-second:not(.button-second-active):active{
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-second:disabled, .button-second-active:disabled{
+  background-color: #E5E5E5;
+  color: #ffffff;
+}
+
 .button-second-active{
   background-color: #7DB54F;
   padding: 8px 18px;
+}
+
+.button-second-active:hover,
+.button-second-active:focus-visible{
+  background-color: #6C9E42;
+}
+
+.button-second-active:active{
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+
 }
 
 .card-rate{
@@ -916,14 +957,6 @@ line-height: 28px;
   border-radius: 4px;
   margin: 0;
   align-self: end;
-}
-.pages-link{
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
 }
 
 .main-inner .subscribe{
@@ -943,7 +976,7 @@ line-height: 28px;
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 400px;
+  width: 1060px;
 }
 
 .pages-link{
@@ -952,9 +985,23 @@ line-height: 28px;
   color: #ffffff;
   display: block;
   padding: 12px;
-  text-align: center;
   border-radius: 4px;
   box-sizing: border-box;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pages-link-disabled:hover,
+.pages-link-disabled:focus-visible{
+  background-color: #68a2ca;
+}
+
+.pages-link-disabled:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
 }
 
 .pages-first-link{
