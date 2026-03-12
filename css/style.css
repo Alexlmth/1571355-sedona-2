@@ -1179,7 +1179,7 @@ line-height: 24px;
 
 .modal{
   position: relative;
-  margin: auto;
+  margin: 396px auto auto;
   width: 717px;
   box-sizing: border-box;
   padding: 64px 70px;
@@ -1187,4 +1187,3 @@ line-height: 24px;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
-
