@@ -178,7 +178,7 @@
         </a>
       </footer>
     </div>
-    <div class="modal-container" style="display: none;">
+    <div class="modal-container">
       <div class="modal-search modal ">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -207,13 +207,16 @@
                 </p>
               </div>
               <div class="modal-group">
-                <label for="children-quantity" class="form-label">Дети:</label>
-                <div class="tooltip">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                </div>
+                <span class="form-label">
+                <label class="form-label" for="children-quantity">Дети:</label>
+                <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#000" fill-rule="evenodd" d="M9 4h2v2H9zm2 12H9V7h2z" clip-rule="evenodd"/></svg>
+                </button>
+                </span>
                 <p class="quantity-group">
                   <button class="quantity-minus" type="button"></button>
                   <input type="number" id="children-quantity" name="children-quantity" placeholder="0">
+                  <button class="quantity-plus" type="button"></button>
                   <button class="quantity-plus" type="button"></button>
                 </p>
               </div>
