@@ -189,17 +189,17 @@
             <label class="form-label" for="arrival-date">
               Дата заезда:
             </label>
-            <input type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
-            <p class="modal-prompt">Мы не можем отправить вас в прошлое.</p>
+            <input class="date-input" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+            <p class="modal-prompt modal-prompt-warning">Мы не можем отправить вас в прошлое.</p>
             <label class="form-label" for="departure-date">
               Дата выезда:
             </label>
-            <input type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2023">
+            <input class="date-input" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2023">
             <p class="modal-prompt">На эти даты есть свободные номера. Пока есть.</p>
 
             <div class="modal-quantity-wrapper">
               <div class="modal-group">
-                <label class="form-label" for="adults-quantity" >Взрослые:</label>
+                <label class="form-label" for="adults-quantity">Взрослые:</label>
                 <p class="quantity-group">
                   <button class="quantity-minus" type="button"></button>
                   <input type="number" id="adults-quantity" name="adults-quantity" min="1" placeholder="1">
@@ -207,20 +207,24 @@
                 </p>
               </div>
               <div class="modal-group">
-                <span class="form-label">
-                <label class="form-label" for="children-quantity">Дети:</label>
-                <button class="tooltip-toggle" type="button">
-                  <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#000" fill-rule="evenodd" d="M9 4h2v2H9zm2 12H9V7h2z" clip-rule="evenodd"/></svg>
-                </button>
-                </span>
+                <div class="form-wrapper-tooltip">
+                  <label class="form-label" for="children-quantity">Дети:</label>
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                      viewBox="0 0 20 20">
+                      <path fill="#000" fill-rule="evenodd" d="M9 4h2v2H9zm2 12H9V7h2z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                </div>
                 <p class="quantity-group">
                   <button class="quantity-minus" type="button"></button>
                   <input type="number" id="children-quantity" name="children-quantity" placeholder="0">
                   <button class="quantity-plus" type="button"></button>
-                  <button class="quantity-plus" type="button"></button>
                 </p>
               </div>
             </div>
+            <button class="modal-submit" type="submit">найти</button>
+          </form>
         </section>
 
       </div>
