@@ -1211,6 +1211,7 @@ line-height: 24px;
 .date-input{
   width: 440px;
   padding: 12px 40px 12px 20px;
+  color: #000000;
   background-image: url(../images/background/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
@@ -1240,22 +1241,36 @@ line-height: 24px;
 .modal-group{
   display: flex;
   width: 247px;
+  align-items: center;
+}
+
+.modal-group > :first-child {
+  margin-right: 46px;
 }
 
 .quantity-group{
+  min-width: 110px;
   display: flex;
   margin: 0;
 }
+.quantity-input {
+  min-width: 31px;
+  height: 48px;
+  padding: 14px 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #F2F2F2;
+  text-align: center;
+  border: none;
+  appearance: textfield;
+}
 
-.quantity-input{
-  appearance
-Changes the appearance of buttons and other controls to resemble native controls.
-
-Widely available across major browsers (Baseline since September 2024)
-Learn more
-
-Don't show
-: textfield;
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .form-wrapper-tooltip{
@@ -1267,11 +1282,15 @@ Don't show
 }
 
 .tooltip-toggle {
+  width: 26px;
+  height: 26px;
   border: none;
-  background-color: transparent;
+  border-radius: 50%;
   padding: 0;
   margin: 0;
+  margin-left: 10px;
   display: block;
+  background-color: #83b3d3;
 }
 
 .tooltip-icon {
