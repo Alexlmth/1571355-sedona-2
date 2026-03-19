@@ -1177,9 +1177,13 @@ line-height: 24px;
    z-index: 10;
 }
 
+.modal-invisible{
+  display: none;
+}
+
 .modal{
   position: relative;
-  margin: auto;
+  margin: 396px auto 0;
   width: 717px;
   box-sizing: border-box;
   font-size: 20px;
@@ -1212,7 +1216,7 @@ line-height: 24px;
   background-color: #e5e5e5;
 }
 
-.modal-button-closefocus-visible {
+.modal-button-close:focus-visible {
   outline: 3px solid #83b3d3;
 }
 
@@ -1241,7 +1245,6 @@ line-height: 24px;
 
 .modal-form input{
   border: none;
-  background-color: #f2f2f2;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1252,11 +1255,22 @@ line-height: 24px;
 .date-input{
   width: 440px;
   padding: 12px 40px 12px 20px;
+  background-color: #f2f2f2;
   color: #000000;
   background-image: url(../images/background/calendar.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
   border-radius: 4px;
+  outline: none;
+}
+
+.date-input:hover,.date-input:focus-visible {
+  background-color: #e5e5e5;;
+}
+
+.quantity-group:has(.quantity-input:hover),
+.quantity-group:has(.quantity-input:focus-visible){
+  background-color: #e5e5e5;;
 }
 
 .modal-prompt{
@@ -1294,6 +1308,8 @@ line-height: 24px;
   min-width: 110px;
   display: flex;
   margin: 0;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 .quantity-input {
@@ -1321,7 +1337,7 @@ line-height: 24px;
   position: relative;
   border: none;
   width: 34px;
-  background-color: #f2f2f2;
+  background-color: transparent;
   cursor: pointer;
   outline: none;
 }
@@ -1391,6 +1407,7 @@ line-height: 24px;
 .form-wrapper-tooltip{
   display: flex;
   margin-left: 7px;
+  position: relative;
 }
 
 .modal-submit{
@@ -1406,14 +1423,7 @@ line-height: 24px;
   font-family: inherit;
   border: none;
   cursor: pointer;
-}
-
-.modal-submit:hover,.modal-submit:focus-visible{
-  background-color: #68A2CA;
-}
-.modal-submit:active{
-  background-color: #68A2CA;
-  color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .tooltip-toggle {
@@ -1429,4 +1439,57 @@ line-height: 24px;
   background-image: url(../images/background/info.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-submit:hover,.modal-submit:focus-visible,
+.tooltip-toggle:hover,.tooltip-toggle:focus-visible{
+  background-color: #68A2CA;
+}
+.modal-submit:active{
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.tooltip-toggle:hover + .tooltip-popover,
+.tooltip-toggle:focus-visible + .tooltip-popover{
+  display: block;
+}
+
+.popover-content{
+  position: relative;
+  width: 256px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: left;
+  background-color: #333333;
+  padding: 15px 18px 18px 22px;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 #0000004D;
+;
+}
+
+.popover-content::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #333333;
+  position: absolute;
+  top: -9px;
+  left: 119px;
+}
+
+.tooltip-popover{
+  position: absolute;
+  z-index: 100;
+  top: 40px;
+  left: -57px;
+  display: none;
 }
