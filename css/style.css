@@ -128,22 +128,12 @@ body {
   outline: none;
 }
 
-.navigation-link-hover:active::after{
+.navigation-link-hover:active{
   background-color: #82B3D3;
 }
 
-.navigation-link-hover:hover::after, .navigation-link-hover:focus-visible::after{
-  position: absolute;
-  content: "";
-  left: 16px;
-  right: 16px;
-  bottom: 0;
-  height: 2px;
-  background-color: #756257;
-}
-
-.navigation-link-hover:active::after{
-  background-color: #82B3D3;
+.navigation-link-hover:hover, .navigation-link-hover:focus-visible{
+  opacity: 0.5;
 }
 
 .user-navigation .navigation-link{
@@ -1250,12 +1240,12 @@ line-height: 24px;
   line-height: 24px;
   font-weight: 700;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .date-input{
   width: 440px;
   padding: 12px 40px 12px 20px;
-  background-color: #f2f2f2;
   color: #000000;
   background-image: url(../images/background/calendar.svg);
   background-repeat: no-repeat;
@@ -1264,12 +1254,7 @@ line-height: 24px;
   outline: none;
 }
 
-.date-input:hover,.date-input:focus-visible {
-  background-color: #e5e5e5;;
-}
-
-.quantity-group:has(.quantity-input:hover),
-.quantity-group:has(.quantity-input:focus-visible){
+.modal-form input:hover,.modal-form input:focus-visible {
   background-color: #e5e5e5;;
 }
 
@@ -1471,7 +1456,6 @@ line-height: 24px;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0 15px 30px 0 #0000004D;
-;
 }
 
 .popover-content::before{
