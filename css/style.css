@@ -130,6 +130,26 @@ body {
   cursor: pointer;
 }
 
+.footer-developer{
+  position: relative;
+  width: 115px;
+  height: 40px;
+}
+
+.button{
+  background-color: #756157;
+  font-family: "PT Sans", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  overflow-wrap:break-word;
+}
+
 .subscribe-button{
   min-width: 132px;
   min-height: 36px;
@@ -139,12 +159,6 @@ body {
   border-bottom-left-radius: 0;
   background-color: #82B3D3;
   cursor: pointer;
-}
-
-.footer-developer{
-  position: relative;
-  width: 115px;
-  height: 40px;
 }
 
 .navigation-link:focus, .search-button, .pages-link, .viewer-link, .card-link,.filter-button-submit,
@@ -162,20 +176,6 @@ body {
 
 .user-navigation .navigation-link{
   padding: 22px 12px;
-}
-
-.button{
-  background-color: #756157;
-  font-family: "PT Sans", sans-serif;
-  color: #fff;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
-  overflow-wrap:break-word;
 }
 
 .user-navigation .button{
@@ -957,6 +957,7 @@ body {
 }
 
 .button-fiarst{
+  grid-column: 1 / 2;
   padding: 8px 26px;
 }
 
@@ -971,6 +972,7 @@ body {
 }
 
 .button-second{
+  grid-column: 2 / -1;
   background-color: #82B3D3;
   padding: 8px 20px;
   cursor: pointer;
@@ -1111,7 +1113,7 @@ body {
   box-sizing: border-box;
   box-shadow: 1px 1px #e5e5e5, -1px -1px #e5e5e5;
   border-radius: 4px;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .card-img {
