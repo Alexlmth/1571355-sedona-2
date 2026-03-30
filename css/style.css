@@ -323,7 +323,7 @@ body {
 .features-item{
   width: 400px;
   box-sizing: border-box;
-  padding: 112px 85px;
+  padding: 112px 84px;
 }
 
 .features-large{
@@ -487,6 +487,10 @@ body {
 .subscribe-button:active{
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-button:disabled{
+  background-color: #E5E5E5;
 }
 
 .field-input{
@@ -678,6 +682,10 @@ body {
   content: "";
 }
 
+.control-input:disabled + .control-mark {
+  opacity: 0.1;
+}
+
 .range-wrapper-inputs{
   display: flex;
   justify-content: center;
@@ -808,6 +816,7 @@ body {
   margin-bottom: 40px;
   padding: 0;
   list-style: none;
+  font-size: 16px;
 }
 
 
@@ -1046,7 +1055,10 @@ body {
 .button-second-active:active{
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
+}
 
+.filter-button-submit:disabled{
+  background-color: #E5E5E5;
 }
 
 .card-rate{
@@ -1478,6 +1490,10 @@ body {
 .modal-submit:active{
   background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.modal-submit:disabled{
+  background-color: #E5E5E5;
 }
 
 .tooltip-popover{
